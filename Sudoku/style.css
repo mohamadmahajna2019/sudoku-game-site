@@ -1,0 +1,279 @@
+
+html, body {
+    background-color: rgb(235, 235, 240);
+}
+
+table {
+
+    border: 2px solid #000000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    transition: all 0.5s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+td {
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td input {
+    color: #e61c1c;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+input:disabled {
+    background-color: #fff;
+}
+
+tr:nth-child(3n) {
+    border-bottom: 4px solid #000000;
+}
+
+tr:nth-child(3n+1) {
+    border-top: 4px solid #000000;
+}
+
+td:nth-child(3n) {
+    border-right: 4px solid #000000;
+}
+
+td:nth-child(3n+1) {
+    border-left: 4px solid #000000;
+}
+
+.right-cell {
+    box-shadow: inset 0px 0px 20px 3px forestgreen;
+}
+
+.wrong-cell {
+    box-shadow: inset 0px 0px 20px 3px tomato
+}
+
+.worning-cell {
+    box-shadow: inset 0px 0px 20px 3px goldenrod;
+}
+/*Material Design*/
+
+.bar-button {
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0 22px;
+    transition: all 0.5s;
+}
+
+.title {
+    position: relative;
+    float: left;
+    left: 18px;
+}
+
+.more-button {
+    float: right;
+    /*right: 18px;*/
+}
+
+
+.nav-menu {
+    border-right: 1px solid rgba(0, 0, 0, .4);
+    background: #fff;
+    color: #212121;
+    position: fixed;
+    left: -256px;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    z-index: 26;
+    font-size: 15px;
+    box-shadow: 16px 0 24px 2px rgba(0, 0, 0, .14);
+    transition: all 0.3s;
+}
+
+.nav-menu-blank {
+    position: relative;
+    left: 256px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-head {
+    height: 172px;
+    background: #000000;
+    position: relative;
+}
+
+.nav-head-img {
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    top: 16px;
+    left: 16px;
+    overflow: hidden;
+}
+
+
+.nav-head-title {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+
+.nav-items {
+    margin-top: 12px;
+}
+
+.nav-item {
+    font-weight: 700;
+    display: block;
+    color: #333;
+    background: #0000;
+    padding: 15px 0 15px 22px;
+    letter-spacing: 1.1px;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin: 0 !important;
+}
+
+.body {
+    width: 95%;
+    max-width: 800px;
+    margin: 96px auto 16px auto;
+    display: flex;
+}
+
+.card {
+    background: #fff;
+    width: fit-content;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .14);
+    float: left;
+    padding: 32px 32px 16px 32px;
+}
+
+.vertical-adjust {
+    margin: 12px 0;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.ripple {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    animation: ripple-effect 1.1s 1 cubic-bezier(.42, 0, .58, 1);
+    opacity: 0;
+}
+
+.red {
+    background: #ff6659;
+    color: #9a0007;
+}
+
+.gray {
+    background: #808080;
+    color: #404040;
+}
+
+
+
+.dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    display: none;
+    transition: all 0.2s;
+}
+
+.dialog-content {
+    top: -200px;
+    background: #fff;
+    width: 90%;
+    max-width: 540px;
+    height: fit-content;
+    margin: auto;
+    vertical-align: middle;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14);
+    z-index: 51;
+    transition: all 0.5s;
+}
+
+.dialog-header {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-bottom: solid 1px #808080;
+}
+
+.radio-option {
+    padding: 0 36px;
+    list-style-type: none;
+    position: relative;
+}
+
+.dialog-footer {
+    border-top: solid 1px #808080;
+    margin-top: 24px;
+    text-align: right;
+    padding-right: 16px;
+}
+
+.dialog-btn {
+    background: transparent;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 8px 16px;
+    outline: none;
+    min-width: 96px;
+    display: inline-block;
+}
+.navbar{
+    background-color: blueviolet !important
+}
+
+
+
+
+
+
+
+
